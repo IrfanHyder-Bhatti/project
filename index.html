@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather app </title>
+  
+    <!-- bootsrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <style>
+      /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 50px 60px;
+            border-radius: 16px;
+            backdrop-filter: blur(6px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Main text */
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgba(27, 153, 231, 0.689);
+            font-size: 42px;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+
+        /* Button styling */
+        .btn {
+            padding: 14px 32px;
+            font-size: 18px;
+            color:black;
+            background: linear-gradient(135deg, #2d42e3, #1489dd);
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+        body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+  display: flex;
+
+
+
+
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffd86b;
+}
+
+/* Mobile Menu Button */
+.menu-btn {
+  display: none;
+  font-size: 26px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+/* footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+     background: linear-gradient(135deg, #6b87e3f1, #b7c0de);
+    color: rgb(14, 13, 13);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.footer a {
+    color: #4f8af7;
+    text-decoration:none;
+}
+
+     </style>
+</head>
+<body>
+    <!-- bootsrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- navbar -->
+     <header>
+        <nav class="navbar">
+           <div class="logo">⛅WeatherNow</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="forecast.html">Forecast</a></li>
+      <li><a href="cities.html">Cities</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+  </nav>
+
+        </nav>
+    </header>
+<!-- homepage -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+     <div class="container">
+        <h1>Welcome to wheater Now!</h1>
+        <button class="btn">Explore more</button>
+    </div>
+<!-- footer -->
+ <footer class="footer">
+  © 2026 Weather Web. All rights reserved. |
+  <a href="#" class="privacy">Privacy Policy</a>
+</footer>
+</body>
+</html>

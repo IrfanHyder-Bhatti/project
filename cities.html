@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities Wheather</title>
+    <style>
+        .courses{
+    padding: 50px 0;
+}
+.courses-heading{
+    text-align: center;
+    color:#4196f1 ;
+}
+.courses-cards{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+
+}
+.courses-card{
+background: linear-gradient(135deg, #4185eb 0%, #ffffffdd 100%);
+padding:30px 10px;
+border-radius: 10px;
+width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 5px 10px 1px rgba(0, 0, 0, 0.222);
+}
+.card-heading{
+color: black;
+margin: 0;
+font-size: 1.1rem;
+font-weight: 700;
+}
+.card-desc{
+    width: 75%;
+    text-align: center;
+    color: gray;
+}
+.card-btn{
+    background-color: #4196f1;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 10px;
+}
+body{
+   background-image:url('cities.png');
+}
+
+    </style>
+</head>
+<body style="text-align: center;">
+     <section class="courses" id="course">
+      <h1 class="courses-heading">Wheather of Popoular cities </h1>
+      <br><br><br>
+      <div class="courses-cards">
+        <div class="courses-card">
+          <p class="card-heading">Islamabad</p>
+          <p class="card-desc">
+           ☁ 20°C,Windy and Cloudy
+          </p>
+          
+          <button class="card-btn">See details...</button>
+        </div>
+
+        <div class="courses-card">
+          <p class="card-heading">Karachi</p>
+          <p class="card-desc">
+           🌞30°C,Sunny
+          </p>
+          <button class="card-btn">see details...</button>
+        </div>
+
+        <div class="courses-card">
+          <p class="card-heading">Hyderabad</p>
+          <p class="card-desc">
+           🌧 25°C,Cloudy and Rainy
+          </p>
+          <button class="card-btn">see details...</button>
+        </div><br><br>
+        <br><br>
+       <br><br>
+
+        <div class="courses-card">
+          <p class="card-heading">Lahore</p>
+          <p class="card-desc">
+           🌤 35°C,Sunny and Cloudy
+          </p>
+          <button class="card-btn">see details...</button>
+        </div>
+      </div>
+    </section>
+     </header>
+    <a href="index.html"><button style="font-size: larger;background-color: #4196f1;text-align: center;height: 90px;width:100px;border-radius: 10%;">&#8656;Go homepage</button></a>
+</body>
+</html>

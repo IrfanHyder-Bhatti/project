@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>forecast</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#87CEEB, #ffffff);
+            text-align: center;
+            padding: 40px;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            background: rgb(64, 144, 241);
+            width: 350px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        #weatherBox {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 80%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #299fe9;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            background: #0077ff;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005ccc;
+        }
+    </style>
+</head>
+<body>
+    
+    </header>
+    <a href="index.html"><button style="font-size: larger;">&#8656;Go homepage</button></a>
+     <h1 style="text-align: center;color: rgb(33, 99, 222);font-size: xx-large;font-family: 'Courier New', Courier, monospace;">✨  ꧁༺ 𝔀𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝔀𝓮𝓪𝓽𝓱𝓮𝓻 𝓷𝓸𝔀 ༻꧂✨ </h1>
+     <br><br><br><br>
+    <div class="container">
+        <h1 style="color: blue;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Weather App</h1>
+        <p style="color:blue;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Enter your city to see the weather</p>
+
+        <input   style="background:lightgrey;"    type="text" id="cityInput" placeholder="Enter city name" />
+        <br/>
+        <button onclick="showWeather()">Check Weather</button>
+
+        <div id="weatherBox"></div>
+    </div>
+      
+    <script>
+        function showWeather() {
+            let city = document.getElementById("cityInput").value;
+
+            if(city === "") {
+                document.getElementById("weatherBox").innerHTML = "Please enter a city name!";
+                return;
+            }
+
+            // Simple fake weather for beginners
+            let temp = Math.floor(Math.random() * 15) + 20; 
+            let conditions = ["Sunny", "Cloudy", "Rainy", "Windy"]; 
+            let randomCondition = conditions[Math.floor(Math.random() * conditions.length)];
+
+            document.getElementById("weatherBox").innerHTML =
+                "Weather in <b>" + city + "</b>:<br>" +
+                temp + "°C, " + randomCondition;
+        }
+    </script>
+
+</body>
+</html>

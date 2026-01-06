@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
+        }
+
+        .about-section {
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-container {
+            max-width: 1000px;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .about-text h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .about-text p {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+        }
+
+        .about-text button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            border: none;
+            background-color: #38bdf8;
+            color: #0f172a;
+            font-size: 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .about-text button:hover {
+            background-color: #0ea5e9;
+        }
+
+        .about-box {
+            flex: 1;
+            min-width: 280px;
+            background: #020617;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .about-box h3 {
+            margin-bottom: 15px;
+            color: #38bdf8;
+        }
+
+        .about-box ul {
+            padding-left: 20px;
+        }
+
+        .about-box li {
+            margin-bottom: 10px;
+            color: #cbd5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="about-section">
+        <div class="about-container">
+
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    We are passionate developers creating clean, simple, and modern websites.
+                    Our goal is to build fast, responsive, and user-friendly web experiences
+                    using the latest technologies.
+                </p>
+                <p>
+                    Whether you are a beginner or a business, we focus on quality design
+                    and performance.
+                </p>
+                <button>Learn More</button>
+            </div>
+
+            <div class="about-box">
+                <h3>What We Do</h3>
+                <ul>
+                    <li>🌐 Web Design & Development</li>
+                    <li>⚡ Fast & Responsive Websites</li>
+                    <li>🎨 Clean UI / UX Design</li>
+                    <li>🔒 Secure & Scalable Solutions</li>
+                    
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
